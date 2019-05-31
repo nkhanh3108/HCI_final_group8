@@ -108,7 +108,7 @@
                         <div class="contact-form">
                             <h5>Get in Touch</h5>
                             <!-- Contact Form -->
-                            <form action="#" method="post">
+                            <form action="#" method="post" id="login-form">
                                 <div class="row">
                                     <div class="col-12 ">
                                         <div class="group">
@@ -214,6 +214,22 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+    <script>
+        $(document).ready(function () {
+            if (sessionStorage.getItem('user')) {
+                window.location.href = 'index.html';
+            }
+
+            $('#login-form').on('submit', function () {
+                // Goi API
+                // onSucess:
+                sessionStorage.setItem('user', $('#name').val());
+                // onError:
+                // access denied cais gi day
+            });
+        });
+
+    </script>
 
 </body>
 
