@@ -58,10 +58,7 @@
                             <div id="breakingNewsTicker" class="ticker">
                                 <ul>
                                     <li><a href="#">Hello World!</a></li>
-                                    <li><a href="#">Hello Universe!</a></li>
-                                    <li><a href="#">Hello Original!</a></li>
-                                    <li><a href="#">Hello Earth!</a></li>
-                                    <li><a href="#">Hello Colorlib!</a></li>
+                                    <li><a href="#" id="username-tag"></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -343,15 +340,7 @@
                                         <label>Name</label>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="group">
-                                        <input type="email" name="email" id="email" required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
+                                <div class="col-12" col-md-6">
                                     <div class="group">
                                         <input type="text" name="subject" id="subject" required>
                                         <span class="highlight"></span>
@@ -640,6 +629,17 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+
+    <script src="js/custom.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            let user = sessionStorage.getItem('user');
+            if (user) {
+                $('#name').attr('value', user);
+            }
+        });
+    </script>
 
 </body>
 
