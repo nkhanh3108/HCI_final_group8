@@ -123,9 +123,9 @@
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="#">Category</a>
                                         <ul class="dropdown">
-                                            <li><a href="category.html">Technology</a></li>
-                                            <li><a href="category.html">Software</a></li>
-                                            <li><a href="category.html">Hardware</a></li>
+                                            <li><a href="category.html">MobileApp</a></li>
+                                            <li><a href="category.html">Tablet</a></li>
+                                            <li><a href="category.html">Wearable Tech</a></li>
                                             <li><a href="category.html">Computer</a></li>
                                             <li><a href="category.html">Smartphone</a></li>
                                         </ul>
@@ -192,7 +192,7 @@
                         <!-- Blog Content -->
                         <div class="single-blog-content">
                             <div class="line"></div>
-                            <a href="#" class="post-tag">Technology</a>
+                            <a href="#" class="post-tag">Smartphone</a>
                             <h4><a href="#" class="post-headline mb-0">Should you buy an iPhone or an Android phone?</a></h4>
                             <div class="post-meta mb-50">
                                 <p>By <a href="#">james smith</a></p>
@@ -219,15 +219,13 @@
                                 <!-- Comment Content -->
                                 <div class="comment-content d-flex">
                                     <!-- Comment Author -->
-                                    <div class="comment-author">
-                                        <img src="img/bg-img/b7.jpg" alt="author">
-                                    </div>
+                                    
                                     <!-- Comment Meta -->
                                     <div class="comment-meta">
-                                        <a href="#" class="post-date">March 12</a>
+                                        <a href="#" class="post-date">june 12</a>
                                         <p><a href="#" class="post-author">William James</a></p>
                                         <p>Efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt.</p>
-                                        <a href="#" class="comment-reply">Reply</a>
+                                        <a href="#" onclick="return reply();" class="comment-reply">Reply</a>
                                     </div>
                                 </div>
                                 <ol class="children">
@@ -235,18 +233,22 @@
                                         <!-- Comment Content -->
                                         <div class="comment-content d-flex">
                                             <!-- Comment Author -->
-                                            <div class="comment-author">
-                                                <img src="img/bg-img/b7.jpg" alt="author">
-                                            </div>
+                                            
                                             <!-- Comment Meta -->
                                             <div class="comment-meta">
-                                                <a href="#" class="post-date">March 12</a>
+                                                <a href="#" class="post-date">June 12</a>
                                                 <p><a href="#" class="post-author">William James</a></p>
                                                 <p>Efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt.</p>
-                                                <a href="#" class="comment-reply">Reply</a>
+                                                
                                             </div>
+											
+											
                                         </div>
+										
                                     </li>
+                                </ol>
+								<ol class="children" id="reply">
+									  
                                 </ol>
                             </li>
 
@@ -255,42 +257,31 @@
                                 <!-- Comment Content -->
                                 <div class="comment-content d-flex">
                                     <!-- Comment Author -->
-                                    <div class="comment-author">
-                                        <img src="img/bg-img/b7.jpg" alt="author">
-                                    </div>
+                                    
                                     <!-- Comment Meta -->
                                     <div class="comment-meta">
-                                        <a href="#" class="post-date">March 12</a>
+                                        <a href="#" class="post-date">june 12</a>
                                         <p><a href="#" class="post-author">William James</a></p>
                                         <p>Efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt.</p>
-                                        <a href="#" class="comment-reply">Reply</a>
+                                        
+										<a href="#" onclick="return reply1();" class="comment-reply">Reply</a>
                                     </div>
                                 </div>
+								<ol class="children" id="reply1">
+									  
+                                </ol>
                             </li>
                         </ol>
                     </div>
-
-                    <div class="post-a-comment-area mt-70">
-                        <h5>Leave a reply</h5>
+					   <div class="post-a-comment-area mt-70">
+					   <h4>Leave a reply</h4>
+                        <h5 id="name"></h5>
+						
                         <!-- Reply Form -->
-                        <form action="#" method="post">
+                        <form id="replysubmit"action="#" method="post">
                             <div class="row">
-                                <div class="col-12 col-md-6">
-                                    <div class="group">
-                                        <input type="text" name="name" id="name" required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-12" col-md-6">
-                                    <div class="group">
-                                        <input type="text" name="subject" id="subject" required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Subject</label>
-                                    </div>
-                                </div>
+                               
+                                
                                 <div class="col-12">
                                     <div class="group">
                                         <textarea name="message" id="message" required></textarea>
@@ -300,11 +291,13 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button type="submit" class="btn original-btn">Reply</button>
+                                    <button type="submit"  class="btn original-btn">Reply</button>
                                 </div>
                             </div>
                         </form>
                     </div>
+
+                    
                 </div>
 
                 <!-- ##### Sidebar Area ##### -->
@@ -335,7 +328,7 @@
                                     </div>
                                     <!-- Post Content -->
                                     <div class="post-content">
-                                        <a href="#" class="post-tag">Technology</a>
+                                        <a href="#" class="post-tag">Wearable Tech</a>
                                         <h4><a href="#" class="post-headline">How to Use Your Smartphone Battery Last Longer</a></h4>
                                         <div class="post-meta">
                                             <p><a href="#">10 June</a></p>
@@ -351,7 +344,7 @@
                                     </div>
                                     <!-- Post Content -->
                                     <div class="post-content">
-                                        <a href="#" class="post-tag">Technology</a>
+                                        <a href="#" class="post-tag">Wearable Tech</a>
                                         <h4><a href="#" class="post-headline">The Best smartphones you can purchase right now in 2019</a></h4>
                                         <div class="post-meta">
                                             <p><a href="#">8 June</a></p>
@@ -367,7 +360,7 @@
                                     </div>
                                     <!-- Post Content -->
                                     <div class="post-content">
-                                        <a href="#" class="post-tag">Technology</a>
+                                        <a href="#" class="post-tag">Wearable Tech</a>
                                         <h4><a href="#" class="post-headline">The iPhone 8 could be the first Apple handset with an OLED display</a></h4>
                                         <div class="post-meta">
                                             <p><a href="#">5 June</a></p>
@@ -383,7 +376,7 @@
                                     </div>
                                     <!-- Post Content -->
                                     <div class="post-content">
-                                        <a href="#" class="post-tag">Technology</a>
+                                        <a href="#" class="post-tag">Wearable Tech</a>
                                         <h4><a href="#" class="post-headline">VLC Player hits Apple TV so you can play your home</a></h4>
                                         <div class="post-meta">
                                             <p><a href="#">1 June</a></p>
@@ -401,78 +394,6 @@
     </div>
     <!-- ##### Single Blog Area End ##### -->
 
-    <!-- ##### Instagram Feed Area Start ##### -->
-    <div class="instagram-feed-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="insta-title">
-                        <h5>Follow us @ Instagram</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Instagram Slides -->
-        <div class="instagram-slides owl-carousel">
-            <!-- Single Insta Feed -->
-            <div class="single-insta-feed">
-                <img src="img/2.jpg" alt="">
-                <!-- Hover Effects -->
-                <div class="hover-effects">
-                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-            <!-- Single Insta Feed -->
-            <div class="single-insta-feed">
-                <img src="img/3.jpg" alt="">
-                <!-- Hover Effects -->
-                <div class="hover-effects">
-                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-            <!-- Single Insta Feed -->
-            <div class="single-insta-feed">
-                <img src="img/4.jpg" alt="">
-                <!-- Hover Effects -->
-                <div class="hover-effects">
-                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-            <!-- Single Insta Feed -->
-            <div class="single-insta-feed">
-                <img src="img/5.jpg" alt="">
-                <!-- Hover Effects -->
-                <div class="hover-effects">
-                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-            <!-- Single Insta Feed -->
-            <div class="single-insta-feed">
-                <img src="img/phone.jpg" alt="">
-                <!-- Hover Effects -->
-                <div class="hover-effects">
-                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-            <!-- Single Insta Feed -->
-            <div class="single-insta-feed">
-                <img src="img/vr.jpg" alt="">
-                <!-- Hover Effects -->
-                <div class="hover-effects">
-                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-            <!-- Single Insta Feed -->
-            <div class="single-insta-feed">
-                <img src="img/6.jpg" alt="">
-                <!-- Hover Effects -->
-                <div class="hover-effects">
-                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ##### Instagram Feed Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area text-center">
@@ -540,7 +461,49 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/active.js"></script>
 
     <script src="js/custom.js"></script>
-
+	  <script type="text/javascript">
+		
+        function confirmAction(){
+            if(confirm("Are you sure to delete ?")){
+                alert("Deleted");
+                window.location.href = 'category.html';
+            }
+        }
+		let count="0";
+		let count1="0";
+		function reply(){
+		if(count=="0"){
+		count++;
+		if(sessionStorage.getItem('user')){
+		
+		$('#reply').append('<li class="single_comment_area"> <div class="comment-meta"><p><a href="#" class="post-author">'+sessionStorage.getItem('user')+'</a></p></div><form  action="#" id="replysubmit" method="post">   <div class="row"> <div class="col-9">  <div class="group"><textarea name="message" id="message" required></textarea> <span class="highlight"></span><span class="bar"></span><label>Enter your comment</label> </div> </div> <div class="col-3"><button type="submit"  class="btn original-btn1" onclick="return cmt();">Reply</button></div></div> </form></li>');
+		}else{
+		
+		$('#reply').append('<li class="single_comment_area"><div class="comment-meta"><p><a href="#" class="post-author">Annonymous</a></p></div><form  action="#" id="replysubmit" method="post">   <div class="row"> <div class="col-9">  <div class="group"><textarea name="message" id="message" required></textarea> <span class="highlight"></span><span class="bar"></span><label>Enter your comment</label> </div> </div> <div class="col-3"><button type="submit" class="btn original-btn1" onclick="return cmt();">Reply</button></div></div> </form></li>');
+		}}}
+		function reply1(){
+		if(count1=="0"){
+		count1++;
+		if(sessionStorage.getItem('user')){
+		
+		$('#reply1').append('<li class="single_comment_area"> <div class="comment-meta"><p><a href="#" class="post-author">'+sessionStorage.getItem('user')+'</a></p></div><form  action="#" id="replysubmit"method="post">   <div class="row"> <div class="col-9">  <div class="group"><textarea name="message" id="message" required></textarea> <span class="highlight"></span><span class="bar"></span><label>Enter your comment</label> </div> </div> <div class="col-3"><button type="submit" class="btn original-btn1">Reply</button></div></div> </form></li>');
+		}else{
+		
+		$('#reply1').append('<li class="single_comment_area"><div class="comment-meta"><p><a href="#" class="post-author">Annonymous</a></p></div><form  action="#" id="replysubmit" method="post">   <div class="row"> <div class="col-9">  <div class="group"><textarea name="message" id="message" required></textarea> <span class="highlight"></span><span class="bar"></span><label>Enter your comment</label> </div> </div> <div class="col-3"><button type="submit" class="btn original-btn1">Reply</button></div></div> </form></li>');
+		}}}
+        if(sessionStorage.getItem('user')){document.getElementById('name').innerHTML = '' + sessionStorage.getItem('user') + '';}else{document.getElementById('name').innerHTML = 'Anonymous';}
+		 
+		$('#replysubmit').on('submit', function cmt1() {
+			alert("Your comment have been posted");
+			window.location.href = 'single-post.html';
+		});
+		function cmt(){
+			alert("Your comment have been posted");
+			window.location.href = 'single-post.html';
+		}
+		
+        </script>
+		
     
 
 </body>

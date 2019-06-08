@@ -16,7 +16,8 @@
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="style.css">
-
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -69,7 +70,7 @@
                     </div>
                     <!-- Top Social Area -->
                     <div class="col-12 col-sm-4">
-                        <div class="top-social-area">
+                       <div id="exit" class="top-social-area">
                             <a href="#" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
                             <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                             <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -123,11 +124,11 @@
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="#">Category</a>
                                         <ul class="dropdown">
-                                            <li><a href="category.html">Category 1</a></li>
-                                            <li><a href="category.html">Category 1</a></li>
-                                            <li><a href="category.html">Category 1</a></li>
-                                            <li><a href="category.html">Category 1</a></li>
-                                            <li><a href="category.html">Category 1</a></li>
+                                          <li><a href="category.html">MobileApp</a></li>
+                                            <li><a href="category.html">Tablet</a></li>
+                                            <li><a href="category.html">Wearable Tech</a></li>
+                                            <li><a href="category.html">Computer</a></li>
+                                            <li><a href="category.html">Smartphone</a></li>
                                         </ul>
                                     </li>
 									 <li><a href="#">Year</a>
@@ -141,7 +142,7 @@
                                     </li>
                                     <li id="menu-user"></li>
 									<li><a href="about-us.html">About Us</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    
                                 </ul>
 
                                 <!-- Search Form  -->
@@ -168,7 +169,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="breadcumb-content text-center">
-                        <h2>about us</h2>
+                        <h2> history</h2>
                     </div>
                 </div>
             </div>
@@ -176,46 +177,143 @@
     </div>
     <!-- ##### Breadcumb Area End ##### -->
 
-    <!-- ##### Blog Wrapper Start ##### -->
-    <div class="blog-wrapper section-padding-100-0 clearfix">
+ <div class="blog-wrapper section-padding-100 clearfix">
+        
+
         <div class="container">
-            <div class="row align-items-end">
-                <!-- Single Blog Area -->
-                <div class="col-12 col-lg-4">
-                    <div class="single-blog-area clearfix mb-100">
-                        <!-- Blog Content -->
-                        <div class="single-blog-content">
-                            <div class="line"></div>
-                            <a href="#" class="post-tag">Technology</a>
-                            <h4><a href="#" class="post-headline">Welcome to this tech blog of group 8</a></h4>
-                            <p class="mb-3">Hello everybody, Our idea is to regularly publish interesting articles about our work and events. Something around 2 articles per month seems reasonable. Every IT member at ottonova is invited to participate, even other departments might contribute if it is inside of this blog’s scope: Technology. In modern time, technology is having been more and more developed.</p>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-12 col-lg-2"></div>
+                <div class="col-12 col-lg-10">
+                       
+                    <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Detail</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+                                
+                            <tr>
+                                <td style=" line-height: 2;">01 minute ago</td>
+                                <td style=" line-height: 2;">You have read this post: <a href="single-post.html">Should you buy an iPhone or an Android phone?</a></td>
+                                
+                              
+                                      
+                            </tr>
+							 <tr>
+                                <td style=" line-height: 2;">10 minute ago</td>
+                                <td style=" line-height: 2;">You have read this post: <a href="single-post.html">The Best smartphones you can purchase right now in 2019</a></td>    
+                            </tr>
+							 <tr>
+                                <td style=" line-height: 2;">12 minute ago</td>
+                                <td style=" line-height: 2;">You have read this post: <a href="single-post.html">Apple's new ipad lets you play the latest games easily</a></td>    
+                            </tr>
+							<tr>
+                                <td style=" line-height: 2;">12 minute ago</td>
+                                <td style=" line-height: 2;">You have comment on this post: <a href="single-post.html">Apple's new ipad lets you play the latest games easily</a></td>    
+                            </tr>
+							<tr>
+                                <td style=" line-height: 2;">16 minute ago</td>
+                                <td style=" line-height: 2;">You have comment on this post: <a href="single-post.html">Apple's new ipad lets you play the latest games easily</a></td>    
+                            </tr>
+							 <tr>
+                                <td style=" line-height: 2;">20 minute ago</td>
+                                <td style=" line-height: 2;">You have read this post: <a href="single-post.html">Should you buy an iPhone or an Android phone?</a></td>
+                                
+                              
+                                      
+                            </tr>
+							 <tr>
+                                <td style=" line-height: 2;">25 minute ago</td>
+                                <td style=" line-height: 2;">You have read this post: <a href="single-post.html">Apple's new ipad lets you play the latest games easily</a></td>    
+                            </tr>
+							 <tr>
+                                <td style=" line-height: 2;">30 minute ago</td>
+                                <td style=" line-height: 2;">You have read this post: <a href="single-post.html">Should you buy an iPhone or an Android phone?</a></td>
+                                
+                              
+                                      
+                            </tr>
+							 <tr>
+                                <td style=" line-height: 2;">32 minute ago</td>
+                                <td style=" line-height: 2;">You have read this post: <a href="single-post.html">The Best smartphones you can purchase right now in 2019</a></td>    
+                            </tr>
+							 <tr>
+                                <td style=" line-height: 2;">35 minute ago</td>
+                                <td style=" line-height: 2;">You have read this post: <a href="single-post.html">Apple's new ipad lets you play the latest games easily</a></td>    
+                            </tr>
+							<tr>
+                                <td style=" line-height: 2;">40 minute ago</td>
+                                <td style=" line-height: 2;">You have comment on this post: <a href="single-post.html">Apple's new ipad lets you play the latest games easily</a></td>    
+                            </tr>
+							<tr>
+                                <td style=" line-height: 2;">45 minute ago</td>
+                                <td style=" line-height: 2;">You have comment on this post: <a href="single-post.html">Apple's new ipad lets you play the latest games easily</a></td>    
+                            </tr>
+							 <tr>
+                                <td style=" line-height: 2;">46 minute ago</td>
+                                <td style=" line-height: 2;">You have read this post: <a href="single-post.html">Should you buy an iPhone or an Android phone?</a></td>
+                                
+                              
+                                      
+                            </tr>
+							 <tr>
+                                <td style=" line-height: 2;">50 minute ago</td>
+                                <td style=" line-height: 2;">You have read this post: <a href="single-post.html">Apple's new ipad lets you play the latest games easily</a></td>    
+                            </tr>
+                             <tr>
+                                <td style=" line-height: 2;">60 minute ago</td>
+                                <td style=" line-height: 2;">You have read this post: <a href="single-post.html">Should you buy an iPhone or an Android phone?</a></td>
+                                
+                              
+                                      
+                            </tr>
+							 <tr>
+                                <td style=" line-height: 2;">65 minute ago</td>
+                                <td style=" line-height: 2;">You have read this post: <a href="single-post.html">The Best smartphones you can purchase right now in 2019</a></td>    
+                            </tr>
+							 <tr>
+                                <td style=" line-height: 2;">66 minute ago</td>
+                                <td style=" line-height: 2;">You have read this post: <a href="single-post.html">Apple's new ipad lets you play the latest games easily</a></td>    
+                            </tr>
+							<tr>
+                                <td style=" line-height: 2;">70 minute ago</td>
+                                <td style=" line-height: 2;">You have comment on this post: <a href="single-post.html">Apple's new ipad lets you play the latest games easily</a></td>    
+                            </tr>
+							<tr>
+                                <td style=" line-height: 2;">80 minute ago</td>
+                                <td style=" line-height: 2;">You have comment on this post: <a href="single-post.html">Apple's new ipad lets you play the latest games easily</a></td>    
+                            </tr>
+							 <tr>
+                                <td style=" line-height: 2;">85 minute ago</td>
+                                <td style=" line-height: 2;">You have read this post: <a href="single-post.html">Should you buy an iPhone or an Android phone?</a></td>
+                                
+                              
+                                      
+                            </tr>
+							 <tr>
+                                <td style=" line-height: 2;">90 minute ago</td>
+                                <td style=" line-height: 2;">You have read this post: <a href="single-post.html">Apple's new ipad lets you play the latest games easily</a></td>    
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                    <th>Time</th>
+                                    <th>Detail</th>
+                                    
+                            </tr>
+                        </tfoot>
+                    </table>
+                    
+                    
                 </div>
-                <!-- Single Blog Area -->
-                <div class="col-12 col-lg-4">
-                    <div class="single-blog-area clearfix mb-100">
-                        <!-- Blog Content -->
-                        <div class="single-blog-content">
-                            <p class="mb-3">Our place at the forefront of the digital media revolution has required us to create new technologies where nothing existed before, and to engineer media recognition services so massive in scale they can serve every person on Earth more than a dozen times a day. From our modest beginnings to our market-leading position today, some truly great technologies have been created here.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Blog Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-catagory-area clearfix mb-100">
-                        <img src="img/7.jpg" alt="">
-                        <!-- Catagory Title -->
-                        <div class="catagory-title">
-                            <a href="#">Technology posts</a>
-                        </div>
-                    </div>
-                </div>
+
+                
             </div>
         </div>
     </div>
-    <!-- ##### Blog Wrapper End ##### -->
-
     <!-- ##### Cool Facts Area Start ##### -->
     <div class="cool-facts-area section-padding-100-0 bg-img background-overlay" style="background-image: url(img/1.jpg);">
         <div class="container">
@@ -225,9 +323,9 @@
                         <!-- Blog Content -->
                         <div class="single-blog-content">
                             <div class="line"></div>
-                            <a href="#" class="post-tag">Technology</a>
-                            <h4><a href="#" class="post-headline">Welcome to this Technology blog of group 8</a></h4>
-                            <p>Technology can be the knowledge of techniques, processes, and the like, or it can be embedded in machines to allow for operation without detailed knowledge of their workings. Systems applying technology by taking an input, changing it according to the system's use, and then producing an outcome are referred to as technology systems or technological systems.</p>
+                            <a href="#" class="post-tag">Wearable Tech</a>
+                            <h4><a href="#" class="post-headline">Welcome to this Wearable Tech blog of group 8</a></h4>
+                            <p>Wearable Tech can be the knowledge of techniques, processes, and the like, or it can be embedded in machines to allow for operation without detailed knowledge of their workings. Systems applying Wearable Tech by taking an input, changing it according to the system's use, and then producing an outcome are referred to as Wearable Tech systems or technological systems.</p>
                         </div>
                     </div>
                 </div>
@@ -267,154 +365,6 @@
     </div>
     <!-- ##### Cool Facts Area End ##### -->
 
-    <!-- ##### Blog Wrapper Start ##### -->
-    <div class="blog-wrapper section-padding-100-0 clearfix">
-        <div class="container">
-            <div class="row">
-                <!-- Single Blog Area  -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-blog-area blog-style-2 mb-100">
-                        <div class="single-blog-thumbnail">
-                            <img src="img/iphone-galaxy-.jpg" alt="">
-                            <div class="post-date">
-                                <a href="#">12 <span>may</span></a>
-                            </div>
-                        </div>
-                        <!-- Blog Content -->
-                        <div class="single-blog-content mt-50">
-                            <div class="line"></div>
-                            <a href="#" class="post-tag">Technology</a>
-                            <h4><a href="#" class="post-headline">Should you buy an iPhone or an Android phone?</a></h4>
-                            <p>There's more than one mobile phone operating system, but really only two worth talking about: Android and iOS. Windows phones are still around, but only account for around one percent of all phones sold, so it makes more sense to go with Android or an iPhone.</p>
-                            <div class="post-meta">
-                                <p>By <a href="#">james smith</a></p>
-                                <p>3 comments</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Blog Area  -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-blog-area blog-style-2 mb-100">
-                        <div class="single-blog-thumbnail">
-                            <img src="img/111.jpg" alt="">
-                            <div class="post-date">
-                                <a href="#">2 <span>may</span></a>
-                            </div>
-                        </div>
-                        <!-- Blog Content -->
-                        <div class="single-blog-content mt-50">
-                            <div class="line"></div>
-                            <a href="#" class="post-tag">Technology</a>
-                            <h4><a href="#" class="post-headline">The Best smartphones you can purchase right now in 2019</a></h4>
-                            <p>Phones come in all shapes, sizes and prices. Here, we have ranked and reviewed the ten best phones money can buy. When choosing a phone you should consider these things: build quality and design, ease of use, features, performance and value. When you use you can feel more interesting.</p>
-                            <div class="post-meta">
-                                <p>By <a href="#">james smith</a></p>
-                                <p>3 comments</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Blog Area  -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-blog-area blog-style-2 mb-100">
-                        <div class="single-blog-thumbnail">
-                            <img src="img/ipad-games.jpg" alt="">
-                            <div class="post-date">
-                                <a href="#">10 <span>april</span></a>
-                            </div>
-                        </div>
-                        <!-- Blog Content -->
-                        <div class="single-blog-content mt-50">
-                            <div class="line"></div>
-                            <a href="#" class="post-tag">Technology</a>
-                            <h4><a href="#" class="post-headline">Apple's new ipad lets you play the latest games easily</a></h4>
-                            <p>Gaming on your iPad couldn't be sweeter. It's small enough to take with you everywhere, but with a big enough screen to allow for more precision with your taps, and it's that deadly combination that makes me reach for my iPad to play my favorite mobile games over and over.</p>
-                            <div class="post-meta">
-                                <p>By <a href="#">james smith</a></p>
-                                <p>3 comments</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ##### Blog Wrapper End ##### -->
-
-    <!-- ##### Instagram Feed Area Start ##### -->
-    <div class="instagram-feed-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="insta-title">
-                        <h5>Follow us @ Instagram</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Instagram Slides -->
-        <div class="instagram-slides owl-carousel">
-            <!-- Single Insta Feed -->
-            <div class="single-insta-feed">
-                <img src="img/2.jpg" alt="">
-                <!-- Hover Effects -->
-                <div class="hover-effects">
-                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-            <!-- Single Insta Feed -->
-            <div class="single-insta-feed">
-                <img src="img/3.jpg" alt="">
-                <!-- Hover Effects -->
-                <div class="hover-effects">
-                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-            <!-- Single Insta Feed -->
-            <div class="single-insta-feed">
-                <img src="img/4.jpg" alt="">
-                <!-- Hover Effects -->
-                <div class="hover-effects">
-                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-            <!-- Single Insta Feed -->
-            <div class="single-insta-feed">
-                <img src="img/5.jpg" alt="">
-                <!-- Hover Effects -->
-                <div class="hover-effects">
-                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-            <!-- Single Insta Feed -->
-            <div class="single-insta-feed">
-                <img src="img/vr.jpg" alt="">
-                <!-- Hover Effects -->
-                <div class="hover-effects">
-                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-            <!-- Single Insta Feed -->
-            <div class="single-insta-feed">
-                <img src="img/6.jpg" alt="">
-                <!-- Hover Effects -->
-                <div class="hover-effects">
-                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-            <!-- Single Insta Feed -->
-            <div class="single-insta-feed">
-                <img src="img/phone.jpg" alt="">
-                <!-- Hover Effects -->
-                <div class="hover-effects">
-                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ##### Instagram Feed Area End ##### -->
-
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area text-center">
         <div class="container">
@@ -442,12 +392,8 @@
                                 <!-- Nav Start -->
                                 <div class="classynav">
                                     <ul>
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Lifestyle</a></li>
-                                        <li><a href="#">travel</a></li>
-                                        <li><a href="#">Music</a></li>
-                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="index.html">Home</a></li>
+                                        
                                     </ul>
                                 </div>
                                 <!-- Nav End -->
@@ -487,7 +433,17 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/active.js"></script>
 
     <script src="js/custom.js"></script>
+	<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+	<script>
+		function exit(){
+		sessionStorage.clear();
+	}
 
+        $(document).ready(function() {
+            $('#example').DataTable();
+        });
+    </script>
 </body>
 
 </html>
