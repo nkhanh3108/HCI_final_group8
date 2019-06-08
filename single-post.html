@@ -471,24 +471,28 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		count++;
 		if(sessionStorage.getItem('user')){
 		
-		$('#reply').append('<li class="single_comment_area"> <div class="comment-meta"><p><a href="#" class="post-author">'+sessionStorage.getItem('user')+'</a></p></div><form  action="#" id="replysubmit" >   <div class="row"> <div class="col-9">  <div class="group"><textarea name="message" id="message" required></textarea> <span class="highlight"></span><span class="bar"></span><label>Enter your comment</label> </div> </div> <div class="col-3"><button type="submit"  class="btn original-btn1" ">Reply</button></div></div> </form></li>');
+		$('#reply').append('<li class="single_comment_area"> <div class="comment-meta"><p><a href="#" class="post-author">'+sessionStorage.getItem('user')+'</a></p></div><form  action="#" id="replysubmit1" >   <div class="row"> <div class="col-9">  <div class="group"><textarea name="message" id="message" required></textarea> <span class="highlight"></span><span class="bar"></span><label>Enter your comment</label> </div> </div> <div class="col-3"><button type="submit"  class="btn original-btn1" ">Reply</button></div></div> </form></li>');
 		}else{
 		
-		$('#reply').append('<li class="single_comment_area"><div class="comment-meta"><p><a href="#" class="post-author">Annonymous</a></p></div><form  action="#" id="replysubmit" >   <div class="row"> <div class="col-9">  <div class="group"><textarea name="message" id="message" required></textarea> <span class="highlight"></span><span class="bar"></span><label>Enter your comment</label> </div> </div> <div class="col-3"><button type="submit" class="btn original-btn1" >Reply</button></div></div> </form></li>');
+		$('#reply').append('<li class="single_comment_area"><div class="comment-meta"><p><a href="#" class="post-author">Annonymous</a></p></div><form  action="#" id="replysubmit1" >   <div class="row"> <div class="col-9">  <div class="group"><textarea name="message" id="message" required></textarea> <span class="highlight"></span><span class="bar"></span><label>Enter your comment</label> </div> </div> <div class="col-3"><button type="submit" class="btn original-btn1" >Reply</button></div></div> </form></li>');
 		}}}
 		function reply1(){
 		if(count1=="0"){
 		count1++;
 		if(sessionStorage.getItem('user')){
 		
-		$('#reply1').append('<li class="single_comment_area"> <div class="comment-meta"><p><a href="#" class="post-author">'+sessionStorage.getItem('user')+'</a></p></div><form  action="#" id="replysubmit">   <div class="row"> <div class="col-9">  <div class="group"><textarea name="message" id="message" required></textarea> <span class="highlight"></span><span class="bar"></span><label>Enter your comment</label> </div> </div> <div class="col-3"><button type="submit" class="btn original-btn1">Reply</button></div></div> </form></li>');
+		$('#reply1').append('<li class="single_comment_area"> <div class="comment-meta"><p><a href="#" class="post-author">'+sessionStorage.getItem('user')+'</a></p></div><form  action="#" id="replysubmit1">   <div class="row"> <div class="col-9">  <div class="group"><textarea name="message" id="message" required></textarea> <span class="highlight"></span><span class="bar"></span><label>Enter your comment</label> </div> </div> <div class="col-3"><button type="submit" class="btn original-btn1">Reply</button></div></div> </form></li>');
 		}else{
 		
-		$('#reply1').append('<li class="single_comment_area"><div class="comment-meta"><p><a href="#" class="post-author">Annonymous</a></p></div><form  action="#" id="replysubmit" >   <div class="row"> <div class="col-9">  <div class="group"><textarea name="message" id="message" required></textarea> <span class="highlight"></span><span class="bar"></span><label>Enter your comment</label> </div> </div> <div class="col-3"><button type="submit" class="btn original-btn1">Reply</button></div></div> </form></li>');
+		$('#reply1').append('<li class="single_comment_area"><div class="comment-meta"><p><a href="#" class="post-author">Annonymous</a></p></div><form  action="#" id="replysubmit1" >   <div class="row"> <div class="col-9">  <div class="group"><textarea name="message" id="message" required></textarea> <span class="highlight"></span><span class="bar"></span><label>Enter your comment</label> </div> </div> <div class="col-3"><button type="submit" class="btn original-btn1">Reply</button></div></div> </form></li>');
 		}}}
         if(sessionStorage.getItem('user')){document.getElementById('name').innerHTML = '' + sessionStorage.getItem('user') + '';}else{document.getElementById('name').innerHTML = 'Anonymous';}
 		 
 		$('#replysubmit').on('submit', function cmt1() {
+			alert("Your comment have been posted");
+			window.location.href = 'single-post.html';
+		});
+		  $('#replysubmit1').on('submit', function cmt1() {
 			alert("Your comment have been posted");
 			window.location.href = 'single-post.html';
 		});
