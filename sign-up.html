@@ -295,7 +295,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	     $(document).ready(function check() {
 			if(sessionStorage.getItem('pass')){
             if (sessionStorage.getItem('pass') === sessionStorage.getItem('pass2')) {
-               alert("Succesfull");
+               alert("Register successfully");
+		    window.location.href='login.html';
             }else{
 					alert("Re-enter password must be the same with password");
 				}
